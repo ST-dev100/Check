@@ -85,38 +85,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center">
-        <button
-          onClick={prevPage}
-          disabled={currentPage === 1}
-          className={`mx-2 p-2 ${currentPage === 1 ? 'bg-gray-500' : 'bg-blue-500'} text-white rounded-md`}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        <button
-          onClick={nextPage}
-          disabled={indexOfLastProduct >= data.length}
-          className={`mx-2 p-2 ${indexOfLastProduct >= data.length ? 'bg-gray-500' : 'bg-blue-500'} text-white rounded-md`}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
+
     </>
   );
 };
